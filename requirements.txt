@@ -1,0 +1,11 @@
+numpy
+opencv-python
+packaging
+Pillow
+scikit-learn
+scipy
+termcolor
+timm>=0.9.1
+matplotlib
+seaborn
+pandas
