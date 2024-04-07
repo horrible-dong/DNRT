@@ -7,7 +7,7 @@ Dynamic Neural Response Tuning
 
 > Authors: Tian Qiu, Wenxiang Xu, Lin Chen, Linyun Zhou, Zunlei Feng, Mingli Song  
 > Affiliation: Zhejiang University  
-> Paper Link: [[OpenReview]](https://openreview.net/pdf?id=HiTg16qhxp)
+> Links: [[Paper]](https://openreview.net/pdf?id=HiTg16qhxp) | [[Poster]](poster.pdf)
 
 ## Abstract
 
