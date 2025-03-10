@@ -2,7 +2,7 @@
 
 import os
 
-from _common_ import *
+from _base_ import *
 from qtcls.modules.DNRT import RAA
 
 model = 'vit_tiny_patch4_32'
@@ -11,7 +11,7 @@ dataset = 'cifar100'
 image_size = 32
 batch_size = 256
 lr = 0.0005 * (batch_size / 512)
-output_dir = f"{output_root}/{dataset}/{model}/{os.path.basename(__file__).split('.')[0]}"
+output_dir = f'{output_root}/{dataset}/{model}/{os.path.splitext(os.path.basename(__file__))[0]}'
 model_kwargs = dict(act_layer=RAA, drop_path_rate=0.1)
 
 # Comment out the following lines when using the '--resume/-r' and '--eval' options for evaluation purposes only because
