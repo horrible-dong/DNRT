@@ -22,7 +22,6 @@ class BaseDataset(Dataset):
         split (string, optional): The dataset split. E.g, ``train``, ``val``, ``test``...
         transform (callable, optional): A function/transform that takes in an PIL image and transforms it.
         target_transform (callable, optional): A function/transform that takes in the target and transforms it.
-        batch_transform (callable, optional): A function/transform that takes in a batch and transforms it.
         loader (callable, optional): A function to load an image given its path.
         verbose (bool): Whether to print information.
     """

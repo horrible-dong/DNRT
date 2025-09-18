@@ -2,6 +2,7 @@
 
 from .cifar import CIFAR10, CIFAR100
 from .folder import ImageFolder
+from .imagenet import ImageNet
 
 num_classes = {
     # all in lowercase !!!
@@ -34,7 +35,7 @@ def build_dataset(args, split, download=True):
 
         transform = {
             'train': create_transform(**aug_kwargs['train_aug_kwargs']),
-            'test': create_transform(**aug_kwargs['eval_aug_kwargs']),
+            'test': create_transform(**aug_kwargs['eval_aug_kwargs'])
         }
 
         return CIFAR10(root=dataset_path,
@@ -53,7 +54,7 @@ def build_dataset(args, split, download=True):
 
         transform = {
             'train': create_transform(**aug_kwargs['train_aug_kwargs']),
-            'test': create_transform(**aug_kwargs['eval_aug_kwargs']),
+            'test': create_transform(**aug_kwargs['eval_aug_kwargs'])
         }
 
         return CIFAR100(root=dataset_path,
@@ -69,12 +70,12 @@ def build_dataset(args, split, download=True):
 
         transform = {
             'train': create_transform(**aug_kwargs['train_aug_kwargs']),
-            'val': create_transform(**aug_kwargs['eval_aug_kwargs']),
+            'val': create_transform(**aug_kwargs['eval_aug_kwargs'])
         }
 
-        return ImageFolder(root=dataset_path,
-                           split=split,
-                           transform=transform)
+        return ImageNet(root=dataset_path,
+                        split=split,
+                        transform=transform)
 
 
 def build_timm_aug_kwargs(args, image_size=224, mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)):
@@ -91,5 +92,5 @@ def build_timm_aug_kwargs(args, image_size=224, mean=(0.485, 0.456, 0.406), std=
 
     return {
         'train_aug_kwargs': train_aug_kwargs,
-        'eval_aug_kwargs': eval_aug_kwargs,
+        'eval_aug_kwargs': eval_aug_kwargs
     }

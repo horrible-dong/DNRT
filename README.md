@@ -1,13 +1,13 @@
 Dynamic Neural Response Tuning
 ========
 [![conference](https://img.shields.io/badge/Conference-ICLR_2024-ff69b4)](https://iclr.cc/Conferences/2024)
-&emsp;[![code-framework](https://img.shields.io/badge/Code_Framework-QTClassification--v0.4.0+-brightgreen)](https://github.com/horrible-dong/QTClassification)
+&emsp;[![code-framework](https://img.shields.io/badge/Code_Framework-QTClassification_v0.4.0--plus-brightgreen)](https://github.com/horrible-dong/QTClassification)
 &emsp;[![doc](https://img.shields.io/badge/Docs-Latest-orange)](README.md)
-&emsp;[![license](https://img.shields.io/badge/License-Apache--2.0-blue)](LICENSE)
+&emsp;[![license](https://img.shields.io/badge/License-Apache_2.0-blue)](LICENSE)
 
 > Authors: Tian Qiu, Wenxiang Xu, Lin Chen, Linyun Zhou, Zunlei Feng, Mingli Song  
 > Affiliation: Zhejiang University  
-> Paper Link: [[OpenReview]](https://openreview.net/pdf?id=HiTg16qhxp)
+> Links: [[Paper]](https://openreview.net/pdf?id=HiTg16qhxp) | [[Poster]](poster.pdf)
 
 ## Abstract
 
@@ -29,7 +29,7 @@ distribution. Extensive experimental studies indicate that the proposed DNRT is 
 various mainstream network architectures, and can achieve remarkable performance compared with existing neural response
 mechanisms in multiple tasks and domains.
 
-![teaser](figures/teaser.png)
+![framework](figures/framework.png)
 
 ## Installation
 
@@ -128,7 +128,7 @@ Our code is released under the Apache 2.0 license. Please see the [LICENSE](LICE
 Copyright (c) QIU Tian and ZJU-VIPA Lab. All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use these files except in compliance with
-the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific

@@ -12,7 +12,7 @@ def build_criterion(args):
         weight_dict = {'loss_ce': 1}
         return CrossEntropy(losses=losses, weight_dict=weight_dict)
 
-    if criterion_name == 'ce_arr':
+    if criterion_name == 'arr':
         losses = ['labels', 'arr']
         weight_dict = {'loss_ce': 1, 'loss_arr': args.arr_loss_coef}
         return ARRLoss(losses=losses, weight_dict=weight_dict)
